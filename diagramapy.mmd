@@ -1,0 +1,19 @@
+classDiagram
+    Equipamento <|-- Sensor
+    
+    class Equipamento{
+        -tag
+        -descricao
+        -ativo
+        +ligar()
+        +desligar()
+        +exibirResumo()
+        
+    }
+    
+    class Sensor{
+        -valorAtual
+        +atualizarLeitura()
+        +exibirResumo()
+
+    }
